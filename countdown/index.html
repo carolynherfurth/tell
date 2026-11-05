@@ -201,6 +201,9 @@ p:last-child { margin-bottom: 0; }
 .price-save { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(20px, 2.8vw, 30px); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: var(--yellow); display: block; line-height: 1.2; margin: 8px 0 6px; }
 .price-deadline { font-size: 17px; color: var(--white); line-height: 1.7; display: block; margin-bottom: 24px; }
 .tp-timer { margin: 0 auto 32px; max-width: 640px; }
+/* Hide TimerPulse "Powered by" link */
+a[href*="timerpulse.com"] { display: none !important; }
+*:has(> a[href*="timerpulse.com"]:only-child) { display: none !important; }
 
 /* PROOF */
 .proof-section { padding: 72px 40px; max-width: 900px; margin: 0 auto; }
